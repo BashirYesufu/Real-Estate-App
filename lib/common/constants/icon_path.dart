@@ -1,7 +1,7 @@
 class IconPath {
   static const String _iconDir = "assets/icons";
   static const String arrow = '$_iconDir/arrow.svg';
-  static const String avatar = '$_iconDir/profile.svg';
+  static const String avatar = '$_iconDir/avatar.svg';
   static const String bin = '$_iconDir/bin.svg';
   static const String filter = '$_iconDir/filter.svg';
   static const String heart = '$_iconDir/heart.svg';

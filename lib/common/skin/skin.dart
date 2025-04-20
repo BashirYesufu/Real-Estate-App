@@ -6,7 +6,7 @@ class SkinData {
   static ThemeData lightSkin = ThemeData(
     scaffoldBackgroundColor: AppColors.white,
     cardColor: AppColors.white,
-    fontFamily: AppFonts.sofia,
+    fontFamily: AppFonts.euclid,
     primaryColor: AppColors.primary,
     colorScheme: const ColorScheme(
       brightness: Brightness.light,
@@ -30,31 +30,31 @@ class SkinData {
 TextTheme _lightTextTheme(TextTheme textTheme) {
   return textTheme.copyWith(
     bodySmall: textTheme.bodySmall?.copyWith(
-      fontFamily: AppFonts.sofia,
+      fontFamily: AppFonts.euclid,
       fontSize: 13,
       color: AppColors.secondary,
       fontWeight: FontWeight.w500,
     ),
     bodyMedium: textTheme.bodyMedium?.copyWith(
-      fontFamily: AppFonts.sofia,
+      fontFamily: AppFonts.euclid,
       fontSize: 15,
       color: AppColors.secondary,
       fontWeight: FontWeight.w500,
     ),
     bodyLarge: textTheme.bodyLarge?.copyWith(
-      fontFamily: AppFonts.sofia,
+      fontFamily: AppFonts.euclid,
       fontSize: 20,
       color: AppColors.secondary,
       fontWeight: FontWeight.w500,
     ),
     titleLarge: textTheme.titleLarge?.copyWith(
-      fontFamily: AppFonts.sofia,
+      fontFamily: AppFonts.euclid,
       fontSize: 28,
       color: AppColors.darkGrey,
       fontWeight: FontWeight.w400,
     ),
     labelLarge: textTheme.labelLarge?.copyWith(
-      fontFamily: AppFonts.sofia,
+      fontFamily: AppFonts.euclid,
       fontSize: 30,
       color: AppColors.secondary,
       fontWeight: FontWeight.w600,

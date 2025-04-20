@@ -10,7 +10,6 @@ class NavBar {
     'Avatar': IconPath.avatar,
   };
 
+  static List<String> dialogOptions = ['Cosy areas', 'Price', 'Infrastructure', 'Without any layer'];
+
 }
-
-
-// const List<String> dialogOptions = ['Cosy areas', 'Price', 'Infrastructure', 'Without any layer'];

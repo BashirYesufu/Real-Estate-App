@@ -1,3 +1,3 @@
 class AppFonts {
-  static const sofia = 'Sofia';
+  static const euclid = 'Euclid';
 }

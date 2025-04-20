@@ -3,6 +3,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:real_estate_app/common/constants/dimensions.dart';
 import 'package:real_estate_app/common/skin/skin.dart';
 import 'package:real_estate_app/presentation/screens/home/home_screen.dart';
+import 'package:real_estate_app/presentation/screens/maps/map_screen.dart';
 import 'package:real_estate_app/presentation/widgets/tap_widget.dart';
 import 'package:svg_flutter/svg_flutter.dart';
 import 'common/constants/nav_bar.dart';
@@ -26,7 +27,7 @@ class _AppState extends State<App> with SingleTickerProviderStateMixin {
   final double _begin = 33;
   final double _end = 22;
 
-  int _pageIndex = 2;
+  int _currentPageIndex = 2;
 
   @override
   void initState() {
@@ -100,13 +101,12 @@ class _AppState extends State<App> with SingleTickerProviderStateMixin {
             ),
 
             [
-              // MapHomeView(),
-              SizedBox(),
+              MapScreen(),
               SizedBox(),
               HomeScreen(),
               SizedBox(),
               SizedBox(),
-            ][_pageIndex],
+            ][_currentPageIndex],
 
             Align(
               alignment: Alignment.bottomCenter,
@@ -125,29 +125,29 @@ class _AppState extends State<App> with SingleTickerProviderStateMixin {
                           onTap: () {
                             _onTap();
                             setState(() {
-                              _pageIndex = index;
+                              _currentPageIndex = index;
                             });
                           },
                           waveAnimation: _waveAnimation,
-                          width: _pageIndex == index ? 55 : 47,
-                          height: _pageIndex == index ? 55 : 47,
-                          showWaves: _pageIndex == index,
+                          width: _currentPageIndex == index ? 55 : 47,
+                          height: _currentPageIndex == index ? 55 : 47,
+                          showWaves: _currentPageIndex == index,
                           onHideBorder: _onHideBorder,
                           decoration: BoxDecoration(
-                            color: _pageIndex == index && !_onHideBorder
+                            color: _currentPageIndex == index && !_onHideBorder
                                 ? AppColors.primary
-                                : _pageIndex == 0
+                                : _currentPageIndex == 0
                                 ? Colors.black26
                                 : context.colorScheme.onSurface,
                             shape: BoxShape.circle,
-                            border: _onHideBorder && _pageIndex == index
+                            border: _onHideBorder && _currentPageIndex == index
                                 ? Border.all(color: context.colorScheme.surface, width: 1)
                                 : null,
                           ),
                           child: SvgPicture.asset(
                             NavBar.navIcons.values.toList()[index],
                             color: context.colorScheme.surface,
-                            height: _pageIndex == index ? 28 : null,
+                            height: _currentPageIndex == index ? 28 : null,
                           ),
                         ),
                       ),

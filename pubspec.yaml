@@ -11,7 +11,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.8
   flutter_animate: ^4.5.0
-  google_maps_flutter: ^2.7.0
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
   svg_flutter: ^0.0.1
   animated_flip_counter: ^0.3.4
   auto_size_text: ^3.0.0
@@ -26,27 +27,19 @@ flutter:
 
   assets:
     - assets/icons/
-    - assets/fonts/sofia/
+    - assets/fonts/euclid/
     - assets/images/
 
   fonts:
-    - family: Sofia
+    - family: Euclid
       fonts:
-        - asset: assets/fonts/sofia/SofiaSans-Black.ttf
-        - asset: assets/fonts/sofia/SofiaSans-BlackItalic.ttf
-        - asset: assets/fonts/sofia/SofiaSans-Bold.ttf
-        - asset: assets/fonts/sofia/SofiaSans-BoldItalic.ttf
-        - asset: assets/fonts/sofia/SofiaSans-ExtraBold.ttf
-        - asset: assets/fonts/sofia/SofiaSans-ExtraBoldItalic.ttf
-        - asset: assets/fonts/sofia/SofiaSans-ExtraLight.ttf
-        - asset: assets/fonts/sofia/SofiaSans-ExtraLightItalic.ttf
-        - asset: assets/fonts/sofia/SofiaSans-Italic.ttf
-        - asset: assets/fonts/sofia/SofiaSans-Light.ttf
-        - asset: assets/fonts/sofia/SofiaSans-LightItalic.ttf
-        - asset: assets/fonts/sofia/SofiaSans-Medium.ttf
-        - asset: assets/fonts/sofia/SofiaSans-MediumItalic.ttf
-        - asset: assets/fonts/sofia/SofiaSans-Regular.ttf
-        - asset: assets/fonts/sofia/SofiaSans-Semibold.ttf
-        - asset: assets/fonts/sofia/SofiaSans-SemiboldItalic.ttf
-        - asset: assets/fonts/sofia/SofiaSans-Thin.ttf
-        - asset: assets/fonts/sofia/SofiaSans-ThinItalic.ttf
+        - asset: assets/fonts/euclid/Euclid-Circular-A-Bold.ttf
+        - asset: assets/fonts/euclid/Euclid-Circular-A-Bold-Italic.ttf
+        - asset: assets/fonts/euclid/Euclid-Circular-A-Italic.ttf
+        - asset: assets/fonts/euclid/Euclid-Circular-A-Light.ttf
+        - asset: assets/fonts/euclid/Euclid-Circular-A-Light-Italic.ttf
+        - asset: assets/fonts/euclid/Euclid-Circular-A-Medium.ttf
+        - asset: assets/fonts/euclid/Euclid-Circular-A-Medium-Italic.ttf
+        - asset: assets/fonts/euclid/Euclid-Circular-A-Regular.ttf
+        - asset: assets/fonts/euclid/Euclid-Circular-A-Semibold.ttf
+        - asset: assets/fonts/euclid/Euclid-Circular-A-Semibold-Italic.ttf

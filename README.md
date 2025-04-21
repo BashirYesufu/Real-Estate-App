@@ -1,6 +1,13 @@
 # real_estate_app
-UI clone of a shipping app.
+The shot displays two pages 👇
 
+🏠 The home page shows a welcome phrase and two main buttons that catch users’ attention — these buttons redirect to the related screens and the most popular offers for the current day ✨
+
+🔍 The second page allows users to search for real estate on the map, so they can easily see the relevant offers nearby. In the search, users can select the way the offers will be displayed: by price, location. and infrastructure. Also, the Heatmap feature shows the safest and most convenient parts of the city 🗺️
+
+🎨 We have combined a monochrome color palette with orange 🍊 accents. Selecting real estate is a serious matter, so the users must stay focused. At the same time, the orange elements make the design more friendly 😊
+
+Here users can see all the available options in the area or select from the offers shown on the main screen 🔥
 
 ## Screenshots of the app
 

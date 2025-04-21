@@ -77,7 +77,7 @@ class _MapDialogState extends State<MapDialog> with TickerProviderStateMixin {
     _onDisplayBorder();
     _controller.forward();
     setState(() {
-      widget.animationController.forward() ;
+      widget.animationController.forward();
       _opController.show();
     });
   }
